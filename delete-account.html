@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delete Account - Dream Recharge</title>
+<meta name="description" content="Request permanent deletion of your Dream Recharge account.">
+<meta name="theme-color" content="#5E35B1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #5E35B1; --primary-light: #7E57C2; --primary-dark: #311B92;
+    --accent: #FFC107; --accent-dark: #FF8F00; --danger: #c62828;
+    --white: #FFF; --bg: #F7F5FC; --text: #1A1A2E; --text-secondary: #5A5A6E;
+    --text-light: #8A8A9E; --border: #E8E5F4;
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08); --radius: 16px; --radius-sm: 10px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Urbanist', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+.navbar { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 14px 24px; }
+.navbar-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 1.4rem; font-weight: 800; }
+.logo .d { color: var(--primary); }
+.logo .r { color: var(--accent-dark); }
+.nav-back { font-size: 0.9rem; font-weight: 600; color: var(--primary); padding: 8px 18px; border-radius: 50px; border: 2px solid var(--primary); transition: all 0.3s; }
+.nav-back:hover { background: var(--primary); color: var(--white); }
+.page-header { padding: 60px 0 40px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); color: var(--white); text-align: center; }
+.page-header h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 8px; }
+.page-header p { opacity: 0.9; font-size: 1rem; }
+.content { padding: 40px 0 60px; }
+.card { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-md); padding: 32px 38px; margin-bottom: 22px; }
+.card h2 { font-size: 1.3rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
+.card h3 { font-size: 1.05rem; font-weight: 600; margin: 16px 0 6px; }
+.card p, .card li { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 8px; }
+.card ul, .card ol { padding-left: 22px; margin-bottom: 12px; }
+.card li::marker { color: var(--primary); }
+.warning { background: linear-gradient(135deg, rgba(198,40,40,0.06), rgba(198,40,40,0.02)); border-left: 4px solid var(--danger); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 14px 18px; margin: 14px 0; }
+.warning strong { color: var(--danger); }
+.steps { background: var(--bg); border-radius: var(--radius-sm); padding: 22px 26px; margin: 16px 0; }
+.steps ol { padding-left: 22px; }
+.steps li { margin-bottom: 8px; color: var(--text); }
+.contact-box { background: linear-gradient(135deg, rgba(94,53,177,0.06), rgba(94,53,177,0.02)); border-radius: var(--radius-sm); padding: 22px; text-align: center; margin: 18px 0; }
+.contact-box .chat-btn { display: inline-block; margin-top: 8px; background: var(--primary); color: var(--white); padding: 12px 28px; border-radius: 50px; font-weight: 700; font-size: 0.95rem; }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 14px; }
+.info-item { background: var(--bg); border-radius: var(--radius-sm); padding: 16px; }
+.info-item .label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--text-light); letter-spacing: 0.5px; margin-bottom: 4px; }
+.info-item .value { font-size: 0.95rem; font-weight: 600; color: var(--primary); }
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 28px 0; text-align: center; font-size: 0.85rem; color: var(--text-light); }
+.footer a { color: var(--primary); margin: 0 10px; font-weight: 500; }
+.footer .brand { font-size: 1.15rem; font-weight: 800; margin-bottom: 12px; }
+@media (max-width: 640px) {
+    .page-header h1 { font-size: 1.7rem; }
+    .card { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="/" class="logo"><span class="d">Dream</span> <span class="r">Recharge</span></a>
+        <a href="/" class="nav-back">&larr; Home</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="container">
+        <h1>Delete Your Account</h1>
+        <p>Request permanent deletion of your Dream Recharge account and data</p>
+    </div>
+</header>
+
+<main class="content">
+    <div class="container">
+
+        <div class="card">
+            <h2>How to Request Account Deletion</h2>
+            <p>You can permanently delete your Dream Recharge account and all associated personal data through the <strong>in-app Help &amp; Support live chat</strong>. There is no public email address — Dream Recharge handles all support requests inside the App.</p>
+
+            <div class="steps">
+                <ol>
+                    <li>Open the Dream Recharge app and log in to your account.</li>
+                    <li>Go to <strong>Profile &rarr; Help &amp; Support</strong>.</li>
+                    <li>Start a new chat and send the message: <strong>"Account Deletion Request"</strong></li>
+                    <li>Include your registered <strong>10-digit mobile number</strong> in the chat.</li>
+                    <li>Our team verifies the request and deletes your account within 30 days.</li>
+                    <li>You will receive a confirmation notification once deletion is complete.</li>
+                </ol>
+            </div>
+
+            <div class="contact-box">
+                <div style="font-size: 0.82rem; color: var(--text-light); margin-bottom: 6px;">SUPPORT CHANNEL</div>
+                <div style="font-size: 1.05rem; font-weight: 700; color: var(--primary-dark);">In-app Live Chat</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">Profile → Help &amp; Support</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>What Data Is Deleted</h2>
+            <p>When your account deletion is processed, the following personal data is permanently removed:</p>
+            <ul>
+                <li>Your profile information (name, email, profile photo)</li>
+                <li>Your MPIN and device FCM token</li>
+                <li>Your support chat history</li>
+                <li>Your RC Verification, Bank Account Finder, and UPI Finder lookup history</li>
+                <li>Your saved preferences and app settings</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Data Retained for Legal Compliance</h2>
+            <p>Certain records must be retained in anonymized form even after account deletion, as required by Indian financial and tax regulations:</p>
+            <ul>
+                <li><strong>Transaction records</strong> — retained for up to 7 years.</li>
+                <li><strong>Tax invoices</strong> — retained as required by GST rules.</li>
+                <li><strong>Fraud / dispute records</strong> — retained where legally necessary.</li>
+            </ul>
+            <p>These retained records are stripped of direct personal identifiers and cannot be linked back to you.</p>
+        </div>
+
+        <div class="card">
+            <h2>Important Notes</h2>
+            <div class="warning">
+                <p><strong>Account deletion is permanent.</strong> Once processed, your account cannot be recovered. Please note down any transaction history you may need before requesting deletion.</p>
+            </div>
+            <h3>Wallet Balance</h3>
+            <p>Any remaining wallet balance is forfeited upon voluntary account deletion. Please use your wallet balance before requesting deletion.</p>
+            <h3>Processing Time</h3>
+            <p>Deletion requests are processed within <strong>30 days</strong> of verification.</p>
+            <h3>Re-Registration</h3>
+            <p>After deletion you may register a new account using the same mobile number, but previous history, wallet balance, and referral data will not be restored.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact &amp; Reference</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="label">Service</div>
+                    <div class="value">Dream Recharge</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Support Channel</div>
+                    <div class="value">In-app Live Chat</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Response Time</div>
+                    <div class="value">Within 30 days</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">Privacy Policy</div>
+                    <div class="value"><a href="/privacy.html">View</a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="brand"><span style="color:var(--primary);">Dream</span> <span style="color:var(--accent-dark);">Recharge</span></div>
+        <a href="/">Home</a> | <a href="/terms.html">Terms</a> | <a href="/privacy.html">Privacy</a> | <a href="/refund.html">Refund</a>
+        <div style="margin-top: 14px;">&copy; 2026 Dream Recharge. All rights reserved.</div>
+    </div>
+</footer>
+
+</body>
+</html>

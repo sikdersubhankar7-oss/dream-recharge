@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Dream Recharge</title>
+<meta name="description" content="Privacy Policy for Dream Recharge. How we collect, use, and protect your personal data.">
+<meta name="theme-color" content="#5E35B1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #5E35B1; --primary-light: #7E57C2; --primary-dark: #311B92;
+    --accent: #FFC107; --accent-dark: #FF8F00;
+    --white: #FFF; --bg: #F7F5FC; --text: #1A1A2E; --text-secondary: #5A5A6E;
+    --text-light: #8A8A9E; --border: #E8E5F4;
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08); --radius: 16px; --radius-sm: 10px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Urbanist', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+.navbar .container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo .d { color: var(--primary); }
+.logo .r { color: var(--accent-dark); }
+.nav-back { font-size: 0.9rem; font-weight: 600; color: var(--primary); padding: 8px 18px; border-radius: 50px; border: 2px solid var(--primary); transition: all 0.3s; }
+.nav-back:hover { background: var(--primary); color: var(--white); }
+.page-header { padding: 120px 0 48px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%); color: var(--white); text-align: center; }
+.page-header h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.5px; }
+.page-header p { font-size: 1.05rem; opacity: 0.9; }
+.terms-content { padding: 60px 0 80px; }
+.terms-card { max-width: 860px; margin: 0 auto; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-md); padding: 48px 56px; }
+.terms-meta { display: flex; gap: 14px; padding-bottom: 26px; margin-bottom: 32px; border-bottom: 2px solid var(--border); font-size: 0.88rem; color: var(--text-secondary); flex-wrap: wrap; }
+.terms-meta .badge { background: var(--primary); color: var(--white); padding: 4px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
+.toc { background: var(--bg); border-radius: var(--radius-sm); padding: 26px 32px; margin-bottom: 38px; }
+.toc h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; }
+.toc li { margin-bottom: 5px; }
+.toc a { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; }
+.toc a:hover { color: var(--primary); }
+.terms-section { margin-bottom: 34px; }
+.terms-section h2 { font-size: 1.35rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.terms-section h2 .num { background: var(--primary); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; flex-shrink: 0; }
+.terms-section h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 16px 0 8px; }
+.terms-section p, .terms-section li { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 8px; }
+.terms-section ul { padding-left: 22px; margin-bottom: 12px; }
+.terms-section li::marker { color: var(--primary); }
+.highlight-box { background: linear-gradient(135deg, rgba(94,53,177,0.06), rgba(94,53,177,0.02)); border-left: 4px solid var(--primary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 14px 18px; margin: 14px 0; }
+.highlight-box p { margin-bottom: 0; color: var(--text); font-weight: 500; }
+.highlight-box.warning { background: linear-gradient(135deg, rgba(255,143,0,0.07), rgba(255,143,0,0.02)); border-left-color: var(--accent-dark); }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 14px; }
+.contact-item { background: var(--bg); border-radius: var(--radius-sm); padding: 18px; text-align: center; }
+.contact-item .label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; letter-spacing: 0.5px; }
+.contact-item .value { font-size: 0.95rem; font-weight: 600; color: var(--primary); }
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 40px 0 28px; text-align: center; font-size: 0.85rem; color: var(--text-light); }
+.footer a { color: var(--primary); margin: 0 10px; font-weight: 500; }
+.footer .brand { font-size: 1.15rem; font-weight: 800; margin-bottom: 16px; }
+@media (max-width: 768px) {
+    .navbar .container { height: 60px; }
+    .page-header { padding: 100px 0 36px; } .page-header h1 { font-size: 1.9rem; }
+    .terms-card { padding: 28px 22px; } .terms-section h2 { font-size: 1.15rem; }
+    .toc { padding: 20px 22px; } .terms-meta { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .contact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo"><span class="d">Dream</span> <span class="r">Recharge</span></a>
+        <a href="/" class="nav-back">&larr; Home</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>Your privacy matters to us. Learn how Dream Recharge handles your data.</p>
+    </div>
+</header>
+
+<main class="terms-content">
+    <div class="container">
+        <div class="terms-card">
+
+            <div class="terms-meta">
+                <span class="badge">Effective</span>
+                <span>Last Updated: April 2026</span>
+                <span>|</span>
+                <span>Dream Recharge</span>
+            </div>
+
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ol>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#info-collect">Information We Collect</a></li>
+                    <li><a href="#info-use">How We Use Your Information</a></li>
+                    <li><a href="#data-storage">Data Storage &amp; Security</a></li>
+                    <li><a href="#third-party">Third-Party Service Providers</a></li>
+                    <li><a href="#data-sharing">Data Sharing</a></li>
+                    <li><a href="#cookies">Cookies &amp; Tracking</a></li>
+                    <li><a href="#user-rights">User Rights</a></li>
+                    <li><a href="#account-deletion">Account &amp; Data Deletion</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#data-retention">Data Retention</a></li>
+                    <li><a href="#permissions">Device Permissions</a></li>
+                    <li><a href="#changes">Changes to Privacy Policy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ol>
+            </div>
+
+            <section class="terms-section" id="introduction">
+                <h2><span class="num">1</span> Introduction</h2>
+                <p>Welcome to Dream Recharge. This Privacy Policy explains how Dream Recharge ("we," "us," or "our") collects, uses, stores, and protects your personal information when you use the Dream Recharge mobile application ("App") and our associated services.</p>
+                <p>By downloading, installing, or using the Dream Recharge App, you consent to the collection and use of your information as described in this Privacy Policy. If you do not agree with the practices described herein, please do not use the App.</p>
+            </section>
+
+            <section class="terms-section" id="info-collect">
+                <h2><span class="num">2</span> Information We Collect</h2>
+                <p>We collect only the information necessary to provide the services you use within Dream Recharge:</p>
+
+                <h3>Account Information</h3>
+                <ul>
+                    <li><strong>Mobile Number:</strong> Your 10-digit Indian mobile number, used as your primary account identifier and for OTP-based registration.</li>
+                    <li><strong>Name:</strong> Optional. Entered by you during profile setup.</li>
+                    <li><strong>Email Address:</strong> Optional. Used for account communications inside the app.</li>
+                    <li><strong>Profile Photo:</strong> Optional. If you upload a profile picture, it is stored on our secure servers and shown only inside your account.</li>
+                    <li><strong>MPIN:</strong> A 4-digit Mobile Personal Identification Number that you create to secure your account. Your MPIN is stored only in a one-way hashed form; we never store it in plain text.</li>
+                </ul>
+
+                <h3>Transaction &amp; Wallet Information</h3>
+                <ul>
+                    <li><strong>Wallet Activity:</strong> Records of wallet top-ups, recharge debits, refunds, and cashback credits.</li>
+                    <li><strong>Recharge Records:</strong> Mobile or DTH numbers you recharge, the operator, plan amount, timestamp, and status.</li>
+                    <li><strong>Payment Records:</strong> Payment order IDs and gateway transaction IDs for wallet top-ups. We do NOT store your full card number, CVV, UPI PIN, net-banking password, or any other complete payment credential on our servers.</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p>All payment processing is handled by a certified PCI-DSS compliant payment gateway. Full card details and UPI credentials never reach our servers.</p>
+                </div>
+
+                <h3>Verification Service Inputs</h3>
+                <p>When you use our paid verification services, we collect and store the specific inputs you submit together with the result returned by the upstream data provider:</p>
+                <ul>
+                    <li><strong>RC Verification (Vehicle Info):</strong> The vehicle registration number you enter and the vehicle details retrieved.</li>
+                    <li><strong>Bank Account Finder / UPI Finder:</strong> The mobile number you query and the matched account / UPI information returned.</li>
+                </ul>
+
+                <h3>Support Chat Data</h3>
+                <ul>
+                    <li><strong>Messages:</strong> Text of chat messages you send to our support team via the in-app live chat.</li>
+                    <li><strong>Attachments:</strong> Any image, document, or voice recording you attach.</li>
+                </ul>
+
+                <h3>Device &amp; Technical Information</h3>
+                <ul>
+                    <li><strong>Device Model &amp; OS:</strong> Manufacturer, model, Android version, and app version for compatibility and security checks.</li>
+                    <li><strong>Firebase Cloud Messaging (FCM) Token:</strong> A device-specific token that lets us deliver push notifications to your device.</li>
+                    <li><strong>Crash &amp; Error Logs:</strong> Anonymized diagnostic data that helps us identify and fix app issues.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="info-use">
+                <h2><span class="num">3</span> How We Use Your Information</h2>
+                <h3>Core Service Delivery</h3>
+                <ul>
+                    <li>Process prepaid mobile recharges and DTH recharges that you initiate.</li>
+                    <li>Operate your digital wallet, including top-ups, debits, refunds, and cashback credits.</li>
+                    <li>Deliver paid verification services (RC Verification, Bank Account Finder, UPI Finder).</li>
+                    <li>Maintain your transaction and activity history.</li>
+                </ul>
+                <h3>Customer Support</h3>
+                <ul>
+                    <li>Respond to your in-app chat messages and complaints.</li>
+                    <li>Investigate and resolve transaction disputes.</li>
+                </ul>
+                <h3>Push Notifications</h3>
+                <ul>
+                    <li>Send transaction confirmations, wallet credit / debit alerts, and recharge status updates.</li>
+                    <li>Deliver support-chat replies directly to your device.</li>
+                </ul>
+                <h3>Security &amp; Fraud Prevention</h3>
+                <ul>
+                    <li>Verify your identity via OTP and MPIN.</li>
+                    <li>Detect and prevent fraudulent or unauthorized activity.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="data-storage">
+                <h2><span class="num">4</span> Data Storage &amp; Security</h2>
+                <h3>Encryption</h3>
+                <ul>
+                    <li><strong>Data in Transit:</strong> All communication between the App and our servers uses HTTPS with SSL/TLS encryption.</li>
+                    <li><strong>Sensitive Fields:</strong> Your MPIN is stored as a one-way cryptographic hash. Session tokens are issued per-device and can be revoked at any time.</li>
+                </ul>
+                <h3>Account Lockout</h3>
+                <p>Multiple failed MPIN attempts may trigger a temporary lockout for your protection.</p>
+                <div class="highlight-box">
+                    <p>While we implement strong security measures, no internet-based storage or transmission is 100% secure. Please keep your MPIN confidential and report any suspected unauthorized account access through the in-app live chat immediately.</p>
+                </div>
+            </section>
+
+            <section class="terms-section" id="third-party">
+                <h2><span class="num">5</span> Third-Party Service Providers</h2>
+                <h3>Payment Gateway</h3>
+                <p>Wallet top-ups are processed through a certified PCI-DSS compliant payment gateway provider. We receive only the order ID, status, and amount — never your full card number, CVV, UPI PIN, or net-banking password.</p>
+                <h3>Recharge API Provider</h3>
+                <p>Mobile and DTH recharge requests are routed through an authorized recharge API provider so that your recharge can be fulfilled with the operator.</p>
+                <h3>Plan &amp; Verification API Provider</h3>
+                <p>We use a third-party plan / verification API to (a) fetch prepaid and DTH plan lists, (b) perform vehicle RC Verification, and (c) look up UPI / bank account information linked to a given mobile number.</p>
+                <h3>Firebase Cloud Messaging (FCM)</h3>
+                <p>We use Google Firebase Cloud Messaging to deliver push notifications. Firebase's handling of your FCM token is governed by Google's privacy policy.</p>
+            </section>
+
+            <section class="terms-section" id="data-sharing">
+                <h2><span class="num">6</span> Data Sharing</h2>
+                <div class="highlight-box">
+                    <p>We do NOT sell, trade, or rent your personal information to any third party for marketing or advertising purposes.</p>
+                </div>
+                <p>We share your information only in these limited circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With the third-party providers in Section 5, strictly to deliver the service you requested.</li>
+                    <li><strong>Legal Requirements:</strong> When required by Indian law, court order, or a lawful government request.</li>
+                    <li><strong>Fraud &amp; Safety:</strong> To investigate fraud or abuse.</li>
+                    <li><strong>Business Transfers:</strong> In a merger, acquisition, or sale of the Dream Recharge business, with prior notice.</li>
+                    <li><strong>With Your Consent:</strong> Otherwise only with your explicit consent.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="cookies">
+                <h2><span class="num">7</span> Cookies &amp; Tracking</h2>
+                <p>The Dream Recharge App uses only minimal tracking technologies needed for functionality:</p>
+                <ul>
+                    <li><strong>Local Storage:</strong> Session tokens and preferences are stored on your device for faster performance.</li>
+                    <li><strong>Crash Reporting:</strong> Anonymized crash logs help us fix bugs.</li>
+                </ul>
+                <p>We do NOT use third-party advertising trackers, pixels, or ad-network cookies. No data is shared with advertisers or data brokers.</p>
+            </section>
+
+            <section class="terms-section" id="user-rights">
+                <h2><span class="num">8</span> User Rights</h2>
+                <h3>Right to Access</h3>
+                <p>You can view your profile details, wallet history, recharge history, verification history, and chat history directly inside the App at any time.</p>
+                <h3>Right to Correction</h3>
+                <p>You can update your name, email, and profile photo from the Profile screen.</p>
+                <h3>Right to Deletion</h3>
+                <p>You may request deletion of your account and personal data (see Section 9).</p>
+                <h3>Right to Opt-Out</h3>
+                <p>You can opt out of promotional push notifications from your device notification settings or within the App.</p>
+                <div class="highlight-box">
+                    <p>To exercise any of these rights, contact us via the in-app <strong>Help &amp; Support</strong> live chat. We respond within 30 days.</p>
+                </div>
+            </section>
+
+            <section class="terms-section" id="account-deletion">
+                <h2><span class="num">9</span> Account &amp; Data Deletion</h2>
+                <p>You may request complete deletion of your Dream Recharge account at any time via the in-app <strong>Help &amp; Support</strong> live chat. Send a message with the subject "Account Deletion Request" along with your registered mobile number — see also our <a href="/delete-account.html" style="color:var(--primary);font-weight:600;">Account Deletion page</a>.</p>
+                <h3>What Happens When You Delete Your Account</h3>
+                <ul>
+                    <li>Your profile, photo, MPIN, FCM token, and chat history are permanently removed from our active systems within 30 days.</li>
+                    <li>Any remaining wallet balance is forfeited upon voluntary deletion.</li>
+                    <li>Transaction records may be retained in anonymized form for up to 7 years as required by Indian financial and tax regulations.</li>
+                </ul>
+                <div class="highlight-box warning">
+                    <p>Account deletion is permanent and cannot be reversed.</p>
+                </div>
+            </section>
+
+            <section class="terms-section" id="children">
+                <h2><span class="num">10</span> Children's Privacy</h2>
+                <p>The Dream Recharge App is intended only for users aged 18 years or older. We do not knowingly collect personal information from children under 18.</p>
+            </section>
+
+            <section class="terms-section" id="data-retention">
+                <h2><span class="num">11</span> Data Retention</h2>
+                <ul>
+                    <li><strong>Account Data:</strong> Retained while your account is active. Removed within 30 days of a verified deletion request.</li>
+                    <li><strong>Transaction Records:</strong> Retained for up to 7 years as required by Indian regulations.</li>
+                    <li><strong>Verification Records:</strong> Retained for up to 24 months.</li>
+                    <li><strong>Support Chat History:</strong> Retained for up to 12 months.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="permissions">
+                <h2><span class="num">12</span> Device Permissions</h2>
+                <ul>
+                    <li><strong>Internet:</strong> Required to connect to our servers.</li>
+                    <li><strong>Storage (Scoped):</strong> Used when you save a recharge receipt or attach a file in support chat.</li>
+                    <li><strong>Photos / Gallery:</strong> Used only when you upload a profile photo or attach a file in chat.</li>
+                    <li><strong>Camera (Optional):</strong> Used only if you take a new photo.</li>
+                    <li><strong>Microphone (Optional):</strong> Used only when you record a voice message inside support chat.</li>
+                    <li><strong>Notifications:</strong> Used to deliver transaction and chat alerts.</li>
+                </ul>
+                <p>The App does NOT request access to your contacts, SMS, call logs, precise location, or biometrics.</p>
+            </section>
+
+            <section class="terms-section" id="changes">
+                <h2><span class="num">13</span> Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top will be revised. For material changes we will notify you through an in-app banner or notification. Your continued use of the App after any update constitutes acceptance of the revised policy.</p>
+            </section>
+
+            <section class="terms-section" id="contact">
+                <h2><span class="num">14</span> Contact Us</h2>
+                <p>For any questions or concerns regarding this Privacy Policy or how your data is handled, please reach out via the in-app <strong>Help &amp; Support</strong> live chat. There is no public email address — all support is handled inside the App.</p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="label">Service</div>
+                        <div class="value">Dream Recharge</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Support</div>
+                        <div class="value">In-app Live Chat</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Response</div>
+                        <div class="value">Within 30 days</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="brand"><span style="color:var(--primary);">Dream</span> <span style="color:var(--accent-dark);">Recharge</span></div>
+        <a href="/">Home</a> | <a href="/terms.html">Terms</a> | <a href="/privacy.html">Privacy</a> | <a href="/refund.html">Refund</a> | <a href="/delete-account.html">Delete Account</a>
+        <div style="margin-top: 14px; color: var(--text-light);">&copy; 2026 Dream Recharge. All rights reserved.</div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms and Conditions - Dream Recharge</title>
+<meta name="description" content="Terms and Conditions for Dream Recharge — recharge, wallet, verification and support services.">
+<meta name="theme-color" content="#5E35B1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #5E35B1; --primary-light: #7E57C2; --primary-dark: #311B92;
+    --accent: #FFC107; --accent-dark: #FF8F00;
+    --white: #FFF; --bg: #F7F5FC; --text: #1A1A2E; --text-secondary: #5A5A6E;
+    --text-light: #8A8A9E; --border: #E8E5F4;
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08); --radius: 16px; --radius-sm: 10px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Urbanist', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+.navbar .container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo .d { color: var(--primary); }
+.logo .r { color: var(--accent-dark); }
+.nav-back { font-size: 0.9rem; font-weight: 600; color: var(--primary); padding: 8px 18px; border-radius: 50px; border: 2px solid var(--primary); transition: all 0.3s; }
+.nav-back:hover { background: var(--primary); color: var(--white); }
+.page-header { padding: 120px 0 48px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%); color: var(--white); text-align: center; }
+.page-header h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.5px; }
+.page-header p { font-size: 1.05rem; opacity: 0.9; }
+.terms-content { padding: 60px 0 80px; }
+.terms-card { max-width: 860px; margin: 0 auto; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-md); padding: 48px 56px; }
+.terms-meta { display: flex; gap: 14px; padding-bottom: 26px; margin-bottom: 32px; border-bottom: 2px solid var(--border); font-size: 0.88rem; color: var(--text-secondary); flex-wrap: wrap; }
+.terms-meta .badge { background: var(--primary); color: var(--white); padding: 4px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
+.toc { background: var(--bg); border-radius: var(--radius-sm); padding: 26px 32px; margin-bottom: 38px; }
+.toc h3 { font-size: 1rem; font-weight: 700; color: var(--primary); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.toc ol { padding-left: 20px; }
+.toc li { margin-bottom: 5px; }
+.toc a { color: var(--text-secondary); font-size: 0.9rem; font-weight: 500; }
+.toc a:hover { color: var(--primary); }
+.terms-section { margin-bottom: 34px; }
+.terms-section h2 { font-size: 1.35rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.terms-section h2 .num { background: var(--primary); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; flex-shrink: 0; }
+.terms-section h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 16px 0 8px; }
+.terms-section p, .terms-section li { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 8px; }
+.terms-section ul { padding-left: 22px; margin-bottom: 12px; }
+.terms-section li::marker { color: var(--primary); }
+.highlight-box { background: linear-gradient(135deg, rgba(94,53,177,0.06), rgba(94,53,177,0.02)); border-left: 4px solid var(--primary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 14px 18px; margin: 14px 0; }
+.highlight-box p { margin-bottom: 0; color: var(--text); font-weight: 500; }
+.highlight-box.warning { background: linear-gradient(135deg, rgba(255,143,0,0.07), rgba(255,143,0,0.02)); border-left-color: var(--accent-dark); }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 14px; }
+.contact-item { background: var(--bg); border-radius: var(--radius-sm); padding: 18px; text-align: center; }
+.contact-item .label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; letter-spacing: 0.5px; }
+.contact-item .value { font-size: 0.95rem; font-weight: 600; color: var(--primary); }
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 40px 0 28px; text-align: center; font-size: 0.85rem; color: var(--text-light); }
+.footer a { color: var(--primary); margin: 0 10px; font-weight: 500; }
+.footer .brand { font-size: 1.15rem; font-weight: 800; margin-bottom: 16px; }
+@media (max-width: 768px) {
+    .navbar .container { height: 60px; }
+    .page-header { padding: 100px 0 36px; } .page-header h1 { font-size: 1.9rem; }
+    .terms-card { padding: 28px 22px; } .terms-section h2 { font-size: 1.15rem; }
+    .toc { padding: 20px 22px; } .terms-meta { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .contact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo"><span class="d">Dream</span> <span class="r">Recharge</span></a>
+        <a href="/" class="nav-back">&larr; Home</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <p>Please read these terms carefully before using the Dream Recharge app.</p>
+    </div>
+</header>
+
+<main class="terms-content">
+    <div class="container">
+        <div class="terms-card">
+
+            <div class="terms-meta">
+                <span class="badge">Effective</span>
+                <span>Last Updated: April 2026</span>
+                <span>|</span>
+                <span>Dream Recharge</span>
+            </div>
+
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ol>
+                    <li><a href="#acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#eligibility">Eligibility</a></li>
+                    <li><a href="#description">Description of Services</a></li>
+                    <li><a href="#registration">User Registration &amp; MPIN</a></li>
+                    <li><a href="#wallet">Wallet &amp; Payments</a></li>
+                    <li><a href="#recharge">Mobile &amp; DTH Recharge Services</a></li>
+                    <li><a href="#verification">Paid Verification Services</a></li>
+                    <li><a href="#cashback">Cashback &amp; Referral Program</a></li>
+                    <li><a href="#refund">Refund Policy</a></li>
+                    <li><a href="#responsibilities">User Responsibilities</a></li>
+                    <li><a href="#prohibited">Prohibited Conduct</a></li>
+                    <li><a href="#ip">Intellectual Property</a></li>
+                    <li><a href="#liability">Limitation of Liability</a></li>
+                    <li><a href="#termination">Termination</a></li>
+                    <li><a href="#changes">Changes to Terms</a></li>
+                    <li><a href="#governing-law">Governing Law</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ol>
+            </div>
+
+            <section class="terms-section" id="acceptance">
+                <h2><span class="num">1</span> Acceptance of Terms</h2>
+                <p>By downloading, installing, or using the Dream Recharge mobile application ("App"), you agree to be bound by these Terms and Conditions ("Terms"). These Terms form a legally binding agreement between you ("User," "you") and Dream Recharge ("we," "us," "our").</p>
+                <p>If you do not agree with any part of these Terms, you must not use the App.</p>
+            </section>
+
+            <section class="terms-section" id="eligibility">
+                <h2><span class="num">2</span> Eligibility</h2>
+                <p>You must be at least 18 years of age and a resident of India to use the App.</p>
+                <ul>
+                    <li>You are at least 18 years old.</li>
+                    <li>You have the legal capacity to enter into a binding contract.</li>
+                    <li>You will provide accurate information and use the App for lawful purposes only.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="description">
+                <h2><span class="num">3</span> Description of Services</h2>
+                <p>Dream Recharge is a digital utility platform that offers:</p>
+                <h3>Mobile Recharge (Prepaid)</h3>
+                <p>Prepaid mobile recharge for major Indian telecom operators — Jio, Airtel, Vi, BSNL.</p>
+                <h3>DTH Recharge</h3>
+                <p>Recharges for Airtel DTH, Dish TV, Sun Direct, Tata Play, Videocon d2h.</p>
+                <h3>Digital Wallet</h3>
+                <p>A secure in-app wallet — add funds via UPI, net-banking, or debit / credit card.</p>
+                <h3>Paid Verification Services</h3>
+                <ul>
+                    <li><strong>RC Verification</strong> — vehicle registration lookup.</li>
+                    <li><strong>Bank Account Finder</strong> — bank accounts linked to a mobile number.</li>
+                    <li><strong>UPI Finder</strong> — UPI IDs linked to a mobile number.</li>
+                </ul>
+                <p>Each verification carries a fixed charge displayed inside the App.</p>
+                <h3>Cashback &amp; Referral Program</h3>
+                <p>Cashback on eligible recharges based on operator-specific slabs, plus a referral program.</p>
+                <h3>Support Chat</h3>
+                <p>An in-app live support chat — the only support channel for Dream Recharge.</p>
+            </section>
+
+            <section class="terms-section" id="registration">
+                <h2><span class="num">4</span> User Registration &amp; MPIN</h2>
+                <ul>
+                    <li><strong>OTP Verification:</strong> A one-time password is sent to your mobile via SMS.</li>
+                    <li><strong>MPIN Setup:</strong> You must set a 4-digit MPIN to authorize transactions.</li>
+                    <li><strong>Account Security:</strong> You are solely responsible for maintaining the confidentiality of your MPIN.</li>
+                </ul>
+                <div class="highlight-box">
+                    <p>Never share your MPIN with anyone. Dream Recharge support will NEVER ask for your MPIN.</p>
+                </div>
+            </section>
+
+            <section class="terms-section" id="wallet">
+                <h2><span class="num">5</span> Wallet &amp; Payments</h2>
+                <h3>Adding Money</h3>
+                <ul>
+                    <li>UPI (Unified Payments Interface)</li>
+                    <li>Net Banking</li>
+                    <li>Debit / Credit Cards</li>
+                </ul>
+                <p>All payments are processed through a certified PCI-DSS compliant payment gateway. Dream Recharge does not store your full card number, CVV, UPI PIN, or net-banking password.</p>
+                <h3>Wallet Balance</h3>
+                <ul>
+                    <li>Wallet balances are non-transferable to other users.</li>
+                    <li>Wallet balances cannot be withdrawn as cash or transferred to a bank account.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="recharge">
+                <h2><span class="num">6</span> Mobile &amp; DTH Recharge Services</h2>
+                <p>When you initiate a recharge, the App routes your request through an authorized recharge API provider and the respective operator. Recharges are typically processed instantly but may take up to 24 hours in exceptional cases.</p>
+                <ul>
+                    <li><strong>Success:</strong> Operator confirms completion.</li>
+                    <li><strong>Failed:</strong> Auto-refund to wallet.</li>
+                    <li><strong>Processing:</strong> Operator hasn't confirmed yet.</li>
+                </ul>
+                <div class="highlight-box warning">
+                    <p>Always double-check the mobile number, operator, and plan amount before confirming. Successful recharges cannot be reversed.</p>
+                </div>
+            </section>
+
+            <section class="terms-section" id="verification">
+                <h2><span class="num">7</span> Paid Verification Services</h2>
+                <p>RC Verification, Bank Account Finder, and UPI Finder are paid information-retrieval services. By using them you agree:</p>
+                <ul>
+                    <li>The displayed charge will be deducted from your wallet before lookup.</li>
+                    <li>Data is sourced from a third-party data provider on an "as-is" basis.</li>
+                    <li>If the upstream provider returns an error, the charge is automatically refunded.</li>
+                    <li>You will use returned data only for lawful personal purposes.</li>
+                </ul>
+                <div class="highlight-box warning">
+                    <p>Misuse of lookup data — including unauthorized sharing or harassment — may result in immediate account termination.</p>
+                </div>
+            </section>
+
+            <section class="terms-section" id="cashback">
+                <h2><span class="num">8</span> Cashback &amp; Referral Program</h2>
+                <h3>Cashback</h3>
+                <ul>
+                    <li>Calculated based on operator-specific slab rules.</li>
+                    <li>Credited after the corresponding recharge is confirmed successful.</li>
+                    <li>Reversed if the recharge later fails.</li>
+                </ul>
+                <h3>Referral Program</h3>
+                <ul>
+                    <li>Each user receives a unique referral code.</li>
+                    <li>Creating multiple accounts to claim referral rewards is prohibited.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="refund">
+                <h2><span class="num">9</span> Refund Policy</h2>
+                <p>See our dedicated <a href="/refund.html" style="color:var(--primary);font-weight:600;">Refund Policy</a>. Key points:</p>
+                <ul>
+                    <li><strong>Failed recharges:</strong> Automatic refund to wallet.</li>
+                    <li><strong>Failed verification lookups:</strong> Automatic refund.</li>
+                    <li><strong>Successful recharges or lookups:</strong> Non-refundable.</li>
+                    <li><strong>Refund method:</strong> Wallet only — never cash, bank, card, or UPI.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="responsibilities">
+                <h2><span class="num">10</span> User Responsibilities</h2>
+                <ul>
+                    <li><strong>Accurate Information:</strong> Provide accurate inputs.</li>
+                    <li><strong>Lawful Use:</strong> Use the App only for lawful purposes.</li>
+                    <li><strong>Single Account:</strong> One account per user.</li>
+                    <li><strong>Secure Device:</strong> Keep your phone and MPIN secure.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="prohibited">
+                <h2><span class="num">11</span> Prohibited Conduct</h2>
+                <p>You agree NOT to:</p>
+                <ul>
+                    <li>Decompile, reverse-engineer, or extract source code.</li>
+                    <li>Use bots or scripts.</li>
+                    <li>Bypass rate limits or security controls.</li>
+                    <li>Use stolen or unauthorized payment instruments.</li>
+                    <li>Abuse referral or cashback programs through fake accounts.</li>
+                    <li>Use lookup data to harass, stalk, defraud, or harm any person.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section" id="ip">
+                <h2><span class="num">12</span> Intellectual Property</h2>
+                <p>All content inside the Dream Recharge App is the exclusive intellectual property of Dream Recharge and its licensors. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial use.</p>
+            </section>
+
+            <section class="terms-section" id="liability">
+                <h2><span class="num">13</span> Limitation of Liability</h2>
+                <ul>
+                    <li><strong>Operator Issues:</strong> Not our responsibility.</li>
+                    <li><strong>Upstream Data Accuracy:</strong> Verification results depend on third-party providers.</li>
+                    <li><strong>Network &amp; Gateway Issues:</strong> Not our responsibility.</li>
+                    <li><strong>Indirect Damages:</strong> Not liable for incidental or consequential damages.</li>
+                </ul>
+                <p>Our total liability for any claim is limited to the amount charged by us for the specific transaction in question.</p>
+            </section>
+
+            <section class="terms-section" id="termination">
+                <h2><span class="num">14</span> Termination</h2>
+                <p>We may suspend or terminate your account at any time if you violate these Terms, engage in fraudulent activity, or misuse our services.</p>
+                <p>You may also voluntarily delete your account — see the <a href="/privacy.html#account-deletion" style="color:var(--primary);font-weight:600;">Privacy Policy</a>.</p>
+            </section>
+
+            <section class="terms-section" id="changes">
+                <h2><span class="num">15</span> Changes to These Terms</h2>
+                <p>We may modify these Terms at any time. Changes take effect immediately upon posting inside the App.</p>
+            </section>
+
+            <section class="terms-section" id="governing-law">
+                <h2><span class="num">16</span> Governing Law</h2>
+                <p>These Terms are governed by and construed in accordance with the laws of India.</p>
+            </section>
+
+            <section class="terms-section" id="contact">
+                <h2><span class="num">17</span> Contact Information</h2>
+                <p>For questions or feedback about these Terms, please reach out via the in-app <strong>Help &amp; Support</strong> live chat. There is no public email — all support is handled inside the App.</p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="label">Service</div>
+                        <div class="value">Dream Recharge</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Support</div>
+                        <div class="value">In-app Live Chat</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="brand"><span style="color:var(--primary);">Dream</span> <span style="color:var(--accent-dark);">Recharge</span></div>
+        <a href="/">Home</a> | <a href="/terms.html">Terms</a> | <a href="/privacy.html">Privacy</a> | <a href="/refund.html">Refund</a> | <a href="/delete-account.html">Delete Account</a>
+        <div style="margin-top: 14px; color: var(--text-light);">&copy; 2026 Dream Recharge. All rights reserved.</div>
+    </div>
+</footer>
+
+</body>
+</html>

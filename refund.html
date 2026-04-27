@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refund Policy - Dream Recharge</title>
+<meta name="description" content="Refund Policy for Dream Recharge — recharges, wallet top-ups, and verification services.">
+<meta name="theme-color" content="#5E35B1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #5E35B1; --primary-light: #7E57C2; --primary-dark: #311B92;
+    --accent: #FFC107; --accent-dark: #FF8F00;
+    --white: #FFF; --bg: #F7F5FC; --text: #1A1A2E; --text-secondary: #5A5A6E;
+    --text-light: #8A8A9E; --border: #E8E5F4;
+    --shadow-md: 0 4px 20px rgba(0,0,0,0.08); --radius: 16px; --radius-sm: 10px;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Urbanist', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+.navbar .container { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo .d { color: var(--primary); }
+.logo .r { color: var(--accent-dark); }
+.nav-back { font-size: 0.9rem; font-weight: 600; color: var(--primary); padding: 8px 18px; border-radius: 50px; border: 2px solid var(--primary); transition: all 0.3s; }
+.nav-back:hover { background: var(--primary); color: var(--white); }
+.page-header { padding: 120px 0 48px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%); color: var(--white); text-align: center; }
+.page-header h1 { font-size: 2.6rem; font-weight: 800; margin-bottom: 10px; letter-spacing: -0.5px; }
+.page-header p { font-size: 1.05rem; opacity: 0.9; }
+.terms-content { padding: 60px 0 80px; }
+.terms-card { max-width: 860px; margin: 0 auto; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-md); padding: 48px 56px; }
+.terms-meta { display: flex; gap: 14px; padding-bottom: 26px; margin-bottom: 32px; border-bottom: 2px solid var(--border); font-size: 0.88rem; color: var(--text-secondary); flex-wrap: wrap; }
+.terms-meta .badge { background: var(--primary); color: var(--white); padding: 4px 14px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
+.terms-section { margin-bottom: 34px; }
+.terms-section h2 { font-size: 1.35rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--border); display: flex; align-items: center; gap: 10px; }
+.terms-section h2 .num { background: var(--primary); color: var(--white); width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; }
+.terms-section h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); margin: 16px 0 8px; }
+.terms-section p, .terms-section li { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 8px; }
+.terms-section ul { padding-left: 22px; margin-bottom: 12px; }
+.terms-section li::marker { color: var(--primary); }
+.highlight-box { background: linear-gradient(135deg, rgba(94,53,177,0.06), rgba(94,53,177,0.02)); border-left: 4px solid var(--primary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 14px 18px; margin: 14px 0; }
+.highlight-box p { margin-bottom: 0; color: var(--text); font-weight: 500; }
+.highlight-box.warning { background: linear-gradient(135deg, rgba(255,143,0,0.07), rgba(255,143,0,0.02)); border-left-color: var(--accent-dark); }
+.refund-timeline { width: 100%; border-collapse: collapse; margin: 14px 0; border-radius: var(--radius-sm); overflow: hidden; }
+.refund-timeline th { background: var(--primary); color: var(--white); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; padding: 12px 16px; text-align: left; }
+.refund-timeline td { padding: 12px 16px; font-size: 0.92rem; color: var(--text-secondary); border-bottom: 1px solid var(--border); }
+.refund-timeline tr:nth-child(even) { background: var(--bg); }
+.badge-instant { background: #E8F5E9; color: #2E7D32; padding: 3px 10px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
+.badge-hours { background: #FFF3E0; color: #E65100; padding: 3px 10px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
+.badge-days { background: #EDE7F6; color: #5E35B1; padding: 3px 10px; border-radius: 50px; font-size: 0.78rem; font-weight: 600; }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 14px; }
+.contact-item { background: var(--bg); border-radius: var(--radius-sm); padding: 18px; text-align: center; }
+.contact-item .label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; letter-spacing: 0.5px; }
+.contact-item .value { font-size: 0.95rem; font-weight: 600; color: var(--primary); }
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 40px 0 28px; text-align: center; font-size: 0.85rem; color: var(--text-light); }
+.footer a { color: var(--primary); margin: 0 10px; font-weight: 500; }
+.footer .brand { font-size: 1.15rem; font-weight: 800; margin-bottom: 16px; }
+@media (max-width: 768px) {
+    .navbar .container { height: 60px; }
+    .page-header { padding: 100px 0 36px; } .page-header h1 { font-size: 1.9rem; }
+    .terms-card { padding: 28px 22px; } .terms-section h2 { font-size: 1.15rem; }
+    .terms-meta { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .contact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo"><span class="d">Dream</span> <span class="r">Recharge</span></a>
+        <a href="/" class="nav-back">&larr; Home</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="container">
+        <h1>Refund Policy</h1>
+        <p>How refunds work for recharges, wallet top-ups, and verification services.</p>
+    </div>
+</header>
+
+<main class="terms-content">
+    <div class="container">
+        <div class="terms-card">
+
+            <div class="terms-meta">
+                <span class="badge">Effective</span>
+                <span>Last Updated: April 2026</span>
+                <span>|</span>
+                <span>Dream Recharge</span>
+            </div>
+
+            <section class="terms-section">
+                <h2><span class="num">1</span> Overview</h2>
+                <p>Dream Recharge provides mobile recharge, DTH recharge, digital wallet, and paid verification services to users across India. This Refund Policy explains the circumstances under which refunds are issued.</p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">2</span> Automatic Refund for Failed Recharges</h2>
+                <p>If a mobile or DTH recharge fails after the amount has been deducted from your Dream Recharge wallet, the full amount is automatically credited back to your wallet.</p>
+                <ul>
+                    <li><strong>Operator Rejection:</strong> Telecom or DTH operator declines.</li>
+                    <li><strong>Network Issues:</strong> Connectivity between our systems and the operator.</li>
+                    <li><strong>Transaction Timeout:</strong> Operator does not respond within the expected window.</li>
+                    <li><strong>System Errors:</strong> Technical errors during processing.</li>
+                </ul>
+                <div class="highlight-box">
+                    <p>Failed recharges are detected automatically. The refund is credited instantly — no action required from your side.</p>
+                </div>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">3</span> Processing / Pending Recharges</h2>
+                <p>If a recharge stays in "Processing" status for more than 24 hours, please contact us via the in-app live chat support.</p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">4</span> Verification Service Refunds</h2>
+                <ul>
+                    <li><strong>Successful Lookup:</strong> Charge is non-refundable, even if the result is not useful.</li>
+                    <li><strong>Failed Lookup:</strong> Full charge is automatically refunded to your wallet.</li>
+                    <li><strong>No Data Found:</strong> Treated as a successful lookup and is non-refundable.</li>
+                </ul>
+                <div class="highlight-box warning">
+                    <p>Double-check inputs before submitting a verification request. "No data found" results are non-refundable.</p>
+                </div>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">5</span> Wallet Add Money Refund</h2>
+                <p>If money is deducted from your bank account but not credited to your Dream Recharge wallet, the amount is automatically reconciled within <strong>24 to 48 hours</strong>.</p>
+                <div class="highlight-box">
+                    <p>If not credited within 48 hours, contact us via in-app live chat with your transaction ID.</p>
+                </div>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">6</span> Cashback Reversal on Failed Recharge</h2>
+                <p>Cashback is credited only after a recharge is successful. If a recharge later fails, the cashback is reversed together with the refund of the original amount.</p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">7</span> Non-Refundable Transactions</h2>
+                <ul>
+                    <li><strong>Successful Recharges:</strong> Cannot be reversed once the operator confirms.</li>
+                    <li><strong>Wrong Number / Operator:</strong> User's responsibility.</li>
+                    <li><strong>Wrong Plan Selection:</strong> User's responsibility.</li>
+                    <li><strong>Successful Verification Lookups:</strong> Including "no data found".</li>
+                </ul>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">8</span> Refund Method</h2>
+                <p>All refunds are credited exclusively to your Dream Recharge wallet. We do NOT issue refunds to bank accounts, UPI IDs, cards, or cash.</p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">9</span> Refund Timeline</h2>
+                <table class="refund-timeline">
+                    <thead><tr><th>Scenario</th><th>Timeline</th><th>Method</th></tr></thead>
+                    <tbody>
+                        <tr><td>Failed Recharge</td><td><span class="badge-instant">Instant</span></td><td>Wallet</td></tr>
+                        <tr><td>Failed Verification</td><td><span class="badge-instant">Instant</span></td><td>Wallet</td></tr>
+                        <tr><td>Failed Wallet Top-up</td><td><span class="badge-hours">24–48 Hours</span></td><td>Wallet</td></tr>
+                        <tr><td>Stuck "Processing"</td><td><span class="badge-hours">Up to 24 Hours</span></td><td>Wallet</td></tr>
+                        <tr><td>Disputed Transaction</td><td><span class="badge-days">5–7 Business Days</span></td><td>Wallet</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">10</span> How to Request a Refund</h2>
+                <p>For automatic refunds (failed recharges / verifications / top-ups) — no action is required.</p>
+                <p>For manual refund requests, contact us via the in-app <strong>Help &amp; Support</strong> live chat with: registered mobile number, transaction ID, date, amount, and brief description of the issue.</p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">11</span> Dispute Resolution</h2>
+                <p>If you disagree with a refund decision, raise the dispute via in-app live chat. We investigate and resolve within <strong>7 business days</strong>.</p>
+            </section>
+
+            <section class="terms-section">
+                <h2><span class="num">12</span> Contact Information</h2>
+                <p>For questions or refund-related concerns, please reach out via the in-app <strong>Help &amp; Support</strong> live chat.</p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="label">Service</div>
+                        <div class="value">Dream Recharge</div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Support</div>
+                        <div class="value">In-app Live Chat</div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="brand"><span style="color:var(--primary);">Dream</span> <span style="color:var(--accent-dark);">Recharge</span></div>
+        <a href="/">Home</a> | <a href="/terms.html">Terms</a> | <a href="/privacy.html">Privacy</a> | <a href="/refund.html">Refund</a> | <a href="/delete-account.html">Delete Account</a>
+        <div style="margin-top: 14px; color: var(--text-light);">&copy; 2026 Dream Recharge. All rights reserved.</div>
+    </div>
+</footer>
+
+</body>
+</html>

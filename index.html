@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Recharge — Mobile Recharge App</title>
+<meta name="description" content="Dream Recharge — fast and secure mobile recharge, DTH, digital wallet, RC verification & more.">
+<meta name="theme-color" content="#5E35B1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+    --primary: #5E35B1; --primary-light: #7E57C2; --primary-dark: #311B92;
+    --accent: #FFC107; --accent-dark: #FF8F00;
+    --white: #FFF; --bg: #F7F5FC; --text: #1A1A2E; --text-secondary: #5A5A6E;
+    --text-light: #8A8A9E; --border: #E8E5F4;
+}
+body { font-family: 'Urbanist', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.navbar { background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 14px 0; }
+.navbar .inner { display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 1.5rem; font-weight: 800; }
+.logo .d { color: var(--primary); }
+.logo .r { color: var(--accent-dark); }
+.hero { padding: 80px 0 60px; background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%); color: var(--white); text-align: center; flex: 1; }
+.hero h1 { font-size: 3rem; font-weight: 900; letter-spacing: -1.5px; margin-bottom: 14px; }
+.hero h1 .accent { background: linear-gradient(135deg, var(--accent), #FFD54F); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { font-size: 1.15rem; opacity: 0.92; max-width: 700px; margin: 0 auto 30px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; max-width: 700px; margin: 0 auto 36px; }
+.chip { background: rgba(255,255,255,0.13); border: 1.5px solid rgba(255,255,255,0.22); padding: 8px 18px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; }
+.cta { display: inline-block; background: linear-gradient(135deg, var(--accent), var(--accent-dark)); color: var(--primary-dark); padding: 14px 32px; border-radius: 50px; font-size: 1rem; font-weight: 800; box-shadow: 0 6px 20px rgba(255,143,0,0.4); }
+.legal-grid { padding: 60px 0; }
+.legal-grid h2 { font-size: 1.5rem; font-weight: 800; text-align: center; margin-bottom: 30px; color: var(--primary-dark); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+.legal-card { background: var(--white); border-radius: 14px; padding: 24px 22px; text-align: center; border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s; }
+.legal-card:hover { transform: translateY(-3px); box-shadow: 0 8px 26px rgba(94,53,177,0.12); }
+.legal-card .icon { font-size: 32px; margin-bottom: 10px; }
+.legal-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 6px; }
+.legal-card p { font-size: 0.85rem; color: var(--text-secondary); }
+.footer { background: var(--white); border-top: 1px solid var(--border); padding: 32px 0; text-align: center; font-size: 0.85rem; color: var(--text-light); }
+.footer a { color: var(--primary); margin: 0 10px; font-weight: 500; }
+@media (max-width: 640px) {
+    .hero { padding: 50px 0 40px; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container inner">
+        <a href="/" class="logo"><span class="d">Dream</span> <span class="r">Recharge</span></a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Recharge. <span class="accent">Verify.</span> Done.</h1>
+        <p>Mobile &amp; DTH recharge, secure digital wallet, RC verification, and more — all in one app.</p>
+        <div class="chips">
+            <span class="chip">⚡ Instant Recharge</span>
+            <span class="chip">📺 DTH</span>
+            <span class="chip">💳 Wallet</span>
+            <span class="chip">🚗 RC Verify</span>
+            <span class="chip">🏦 Bank / UPI Finder</span>
+            <span class="chip">🎁 Cashback</span>
+        </div>
+    </div>
+</section>
+
+<section class="legal-grid">
+    <div class="container">
+        <h2>Legal &amp; Policies</h2>
+        <div class="cards">
+            <a href="/privacy.html" class="legal-card">
+                <div class="icon">🔒</div>
+                <h3>Privacy Policy</h3>
+                <p>How we collect &amp; protect your data</p>
+            </a>
+            <a href="/terms.html" class="legal-card">
+                <div class="icon">📄</div>
+                <h3>Terms of Service</h3>
+                <p>Rules for using Dream Recharge</p>
+            </a>
+            <a href="/refund.html" class="legal-card">
+                <div class="icon">💰</div>
+                <h3>Refund Policy</h3>
+                <p>How refunds work</p>
+            </a>
+            <a href="/delete-account.html" class="legal-card">
+                <div class="icon">🗑️</div>
+                <h3>Delete Account</h3>
+                <p>Request account deletion</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div style="font-size: 1.15rem; font-weight: 800; margin-bottom: 14px;"><span style="color:var(--primary);">Dream</span> <span style="color:var(--accent-dark);">Recharge</span></div>
+        <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a> | <a href="/refund.html">Refund</a> | <a href="/delete-account.html">Delete Account</a>
+        <div style="margin-top: 12px;">&copy; 2026 Dream Recharge. Support is handled exclusively through the in-app live chat.</div>
+    </div>
+</footer>
+
+</body>
+</html>
